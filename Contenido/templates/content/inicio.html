@@ -6,6 +6,49 @@
         <title>Inicio</title>
         
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f4f4f4;
+            }
+            header {
+                background: #333;
+                color: #fff;
+                padding: 1rem 0;
+                text-align: center;
+            }
+            .container {
+                padding: 2rem;
+                max-width: 1200px;
+                margin: auto;
+            }
+            .section {
+                margin-bottom: 2rem;
+            }
+            .section h2 {
+                color: #333;
+            }
+            .services, .team, .testimonials {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 1rem;
+            }
+            .service, .team-member, .testimonial {
+                background: #fff;
+                border: 1px solid #ddd;
+                padding: 1rem;
+                flex: 1;
+                min-width: 250px;
+            }
+            footer {
+                background: #333;
+                color: #fff;
+                text-align: center;
+                padding: 1rem 0;
+            }
+        </style>
     </head>
     </head>
     <body>
@@ -32,6 +75,76 @@
                 </div>
             </div>
         </nav>
+        <header>
+            <img src="https://portalinnova.cl/wp-content/uploads/2023/10/Why-Startups-are-More-Popular-than-Ever.jpg" alt="Header Image" style="width: 100%; display: block; margin: 0 auto; max-height: 600px; object-fit: cover;">
+        </header>
+        <div class="container">
+            <section id="grid" class="section">
+                <div class="row mt-5">
+                    <div class="col-md-6">
+                        <img src="https://media.istockphoto.com/id/1342470896/es/foto/cohete-rojo-despega-de-la-estructura-ordenada-de-otros-despegue-%C3%A9xito-de-la-startup-tecnolog%C3%ADa.jpg?s=612x612&w=0&k=20&c=rN63rpAqLgmebpMGOw_kr_na39pheIP-_MsXCf_vNUI=" alt="Image" style="width: 100%; display: block; margin: 0 auto;">
+                    </div>
+                    <div class="col-md-6 mt-4">
+                        <h2>Aceleradora de startups: qué son y cómo funcionan</h2>
+                        <p>Los comienzos son complicados. Ninguna gran empresa empezó en lo más alto, y las aceleradoras de startups juegan un papel crucial en esto.</p>
+                        <p>Conoces el potencial de este sector y quieres aprender más. Si deseas implementar un programa de aceleración de startups, necesitas entender todos sus elementos para asegurar el éxito.</p>
+                        <p>Aquí encontrarás todo sobre aceleradoras de startups: qué son, cómo funcionan, cómo montar una, sus tipos y ejemplos reales. ¡Comencemos!</p>
+                    </div>
+                    <p><br></p>
+                    <div class="col-md-6 mt-5">
+                        <h2>Qué es una aceleradora de startups</h2>
+                        <p>Una aceleradora de startups es una entidad pública o privada que impulsa ideas y empresas nuevas en sus fases iniciales, acelerando su crecimiento en el mercado. Su objetivo es proporcionar los recursos y el apoyo necesarios para que las startups alcancen el éxito</p>
+                        <p>Estas entidades ofrecen formación intensiva, mentoring personalizado, desarrollo de contactos y capital. La formación abarca aspectos técnicos y estrategias de negocio, mientras que los mentores, expertos del sector, guían a los emprendedores. Además, facilitan el acceso a una red de profesionales e inversores cruciales para el crecimiento de las startups.</p>
+                        <p>Las aceleradoras acompañan a los emprendedores a lo largo del proceso, proporcionándoles educación digital avanzada y mentores. Los emprendedores adquieren conocimientos para desarrollar sus ideas, establecer modelos de negocio sólidos, diseñar estrategias de escalabilidad y captar financiación, asegurando así su sostenibilidad y éxito en un mercado competitivo.</p>
+                    </div>
+                    <div class="col-md-6 mt-5">
+                        <img src="https://media.istockphoto.com/id/1414910820/es/foto/desarrollo-de-productos-lanzamiento-an%C3%A1lisis-y-validaci%C3%B3n-de-mercado-mvp-concepto-de-producto.jpg?s=612x612&w=0&k=20&c=QpAMkgpKmBc-zYtq6NwKWGnopTNjFsGGNcD26DUbxU8=" alt="Image" style="width: 100%; display: block; margin: 0 auto;">
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="container">
+            <section id="about" class="section">
+                <h2 style="text-align: center; font-size: 40px;">Nosotros</h2>
+                <br>
+                <p>Potenciamos a fundadores y sus startups para que generen impacto desde Chile hacia el mundo, independientemente de la etapa de desarrollo en la que se encuentren. Nuestro objetivo es apoyar a los emprendedores en cada fase, desde la idea inicial hasta la expansión global, proporcionando los recursos y la orientación necesarios. Creemos que con el apoyo adecuado, cualquier startup puede lograr un cambio significativo y llegar a mercados internacionales.</p>
+            </section>
+            <section id="services" class="section">
+                <h2>Servicios</h2>
+                <div class="services">
+                    <div class="service">
+                        <h3>Mentoría</h3>
+                        <p>Accede a la experiencia de mentores líderes en la industria.</p>
+                    </div>
+                    <div class="service">
+                        <h3>Financiamiento</h3>
+                        <p>Obtén el capital que necesitas para hacer crecer tu start-up.</p>
+                    </div>
+                    <div class="service">
+                        <h3>Red de Contactos</h3>
+                        <p>Conéctate con inversores y otros emprendedores.</p>
+                    </div>
+                </div>
+            </section>
+            <section id="testimonials" class="section">
+                <h2>Testimonios</h2>
+                <div class="testimonials">
+                    <div class="testimonial">
+                        <p>"InnovateNow me ayudó a convertir mi idea en un negocio real. ¡Recomiendo su programa a todos los emprendedores!" - Ana López</p>
+                    </div>
+                    <div class="testimonial">
+                        <p>"Gracias a la mentoría y financiamiento de InnovateNow, mi start-up ha crecido exponencialmente." - Jorge Martínez</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <footer>
+            <section id="contact" class="section">
+                <h2 style="color: white;">Contacto</h2>
+                <p>¿Tienes alguna pregunta o quieres saber más? Contáctanos a través de nuestro formulario en línea o envíanos un correo a <a href="mailto:contacto@innovatnow.com">contacto@innovatnow.com</a>.</p>
+            </section>
+            <p>&copy; 2024 InnovateNow. Todos los derechos reservados.</p>
+        </footer>
     </body>
 
     <script src="https://kit.fontawesome.com/6e6cdb7b1b.js" crossorigin="anonymous"></script>
