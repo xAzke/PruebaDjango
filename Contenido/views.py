@@ -11,12 +11,14 @@ def vistaInicio(request):
 
 def vistaAbout(request):
     context = {
-        "Navbar": Navbar.objects.all()
+        "Navbar": Navbar.objects.all(),
+        "Servicio": Servicio.objects.all()
     }
     return render(request, 'content/quienes-somos.html', context)
 
-def vistaContacto(request):
+def vistaServicio(request):
     context = {
-        "Navbar": Navbar.objects.all()
+        "Navbar": Navbar.objects.all(),
+        "Servicio": Servicio.objects.all()
     }
     return render(request, 'content/servicios.html', context)

@@ -83,60 +83,23 @@
             <img src="https://www.startups.st/wp-content/uploads/2023/02/Programa-empredimiento-3.svg" alt="Image" style="width: 50%; display: block; margin: 0 auto;">
         </div>
         <div class="container">
-            <section id="grid" class="section">
-                <div class="row mt-5">
-                    <div class="col-md-6">
-                        <img src="https://cdn-icons-png.freepik.com/512/8744/8744839.png" alt="Image" style="width: 60%; display: block; margin: 0 auto;">
-                    </div>
-                    <div class="col-md-6 mt-4">
-                        <h2>Iniciativa para emprendedores</h2>
-                        <p><br></p>
-                        <p>A través de una amplia gama de actividades y recursos, nuestro programa está diseñado para cultivar la cultura emprendedora y equipar a los futuros empresarios con las habilidades necesarias para tener éxito en el mundo empresarial.</p>
-                        <ul>
-                            <p>Nuestros programas integran:</p>
-                            <li>Formaciones exhaustivas que abarcan desde fundamentos empresariales hasta estrategias avanzadas de desarrollo y gestión.</li>
-                            <li>Capacitaciones prácticas y talleres interactivos que potencian las habilidades directivas, la creatividad y la resolución de problemas.</li>
-                            <li>Sesiones de networking estratégico diseñadas para conectar a los emprendedores con mentores, inversores y otros recursos clave en el ecosistema empresarial.</li>
-                        </ul>
-                    </div>
-                    <p><br></p>
-                    <p><br></p>
-                    <p><br></p>
-                    <div class="col-md-6 mt-5">
-                        <h2>Programas de aceleración</h2>
-                        <p><br></p>
-                        <p>El objetivo de un programa de aceleración es ayudar a empresas emergentes a desarrollar y perfeccionar su modelo de negocio, y establecer conexiones y redes de contactos para aumentar su visibilidad y oportunidades de inversión.</p>
-                        <ul>
-                            <p>Este programa puede ofrecer:</p>
-                            <li>Capacitación empresarial y asesoramiento de expertos.</li>
-                            <li>Acceso a recursos financieros y tecnológicos.</li>
-                            <li>Conexiones y redes de contactos para facilitar su desarrollo de negocio, inversión y escalado internacional</li>
-                        </ul>
-                    </div>
-                    <div class="col-md-6 mt-5">
-                        <img src="https://cdn-icons-png.flaticon.com/512/1239/1239680.png" alt="Image" style="width: 60%; display: block; margin: 0 auto;">
-                    </div>
-                    <p><br></p>
-                    <p><br></p>
-                    <p><br></p>
-                    <div class="col-md-6">
-                        <img src="https://cdn-icons-png.flaticon.com/512/1239/1239721.png" alt="Image" style="width: 60%; display: block; margin: 0 auto;">
-                    </div>
-                    <div class="col-md-6 mt-4">
-                        <h2>Programa de Crecimiento Avanzado</h2>
-                        <p><br></p>
-                        <p>Un programa de Crecimiento es una iniciativa diseñada para ayudar a las empresas o startups, a escalar sus operaciones y expandir su negocio a nivel nacional o internacional.</p>
-                        <ul>
-                            <p>Pueden aportar:</p>
-                            <li>Recursos y servicios especializados de asesoramiento empresarial para la expansión internacional.</li>
-                            <li>Capacitación y desarrollo de habilidades en áreas como marketing, finanzas, recursos humanos y gestión de proyectos.</li>
-                            <li>Acceso a financiamiento, redes de contactos y otros recursos técnicos y financieros.</li>
-                        </ul>
-                    </div>
-                    <p><br></p>
-                    <p><br></p>
+            {% for itemServicios in Servicio %}
+            <div class="row my-3">
+                <div class="col-lg-6">
+                    <h1>{{ itemServicios.titulo }}</h1>
+                    <img src="{{ itemServicios.url_img }}" class="img-fluid" alt="Image" style="width: 60%; display: block; margin: 0 auto;">
                 </div>
-            </section>
+
+                <div class="col-lg-6">
+                    <p>{{ itemServicios.contenido }}</p>
+                    <ul>
+                        {% for itemContenido in itemServicios.contenido_lista %}
+                            <li>{{ itemContenido }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+            {% endfor %}
         </div>
         <footer>
             <div class="container">
@@ -144,9 +107,9 @@
                     <div class="col-md-12">
                         <section id="contact" class="section">
                             <h2 style="color: white;">Contacto</h2>
-                            <p>¿Tienes alguna pregunta o quieres saber más? Contáctanos a través de nuestro formulario en línea o envíanos un correo a <a href="mailto:contacto@innovatnow.com">contacto@innovatnow.com</a>.</p>
+                            <p>¿Tienes alguna pregunta o quieres saber más? Contáctanos a través de nuestro formulario en línea o envíanos un correo a <a href="mailto:contacto@innovatenow.cl">contacto@innovatenow.cl</a>.</p>
                         </section>
-                        <p style="text-align: center;">© 2022 InnovateNow. Todos los derechos reservados.</p>
+                        <p style="text-align: center;">© 2023 InnovateNow. Todos los derechos reservados.</p>
                     </div>
                 </div>
             </div>

@@ -4,5 +4,5 @@ from . import views
 urlpatterns = [
     path('', views.vistaInicio, name="index"),
     path('quienes-somos', views.vistaAbout, name="quienes-somos"),
-    path('servicios', views.vistaContacto, name="servicios"),
+    path('servicios', views.vistaServicio, name="servicios"),
 ]
