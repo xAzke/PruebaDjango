@@ -11,3 +11,7 @@ class Servicio(models.Model):
     contenido = models.TextField()
     contenido_lista = models.JSONField()
     url_img = models.TextField()
+
+class About(models.Model):
+    titulo = models.CharField(max_length=200)
+    contenido = models.TextField()
